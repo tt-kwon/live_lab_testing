@@ -62,9 +62,5 @@ print(welcome)
 #10 Separate the words in this string into entries in a list, with only lower-case
 #letters, e.g. ['i', 'love', 'how', ...
 my_sent = 'I LOVE how spring is super late this year and there are no flowers and it is cold and rainy.'
-my_sent_list = [my_sent[0], my_sent[2:6], my_sent[7:10], my_sent[10:17], my_sent[18:20], 
-                my_sent[21:26], my_sent[27:31], my_sent[32:36], my_sent[37:41], 
-                my_sent[42:45], my_sent[46:51], my_sent[52:55], my_sent[56:58], 
-                my_sent[59:66], my_sent[67:70], my_sent[71:73], my_sent[74:76],
-                my_sent[77:81], my_sent[82:85], my_sent[86:89], my_sent[89:95] ]
+my_sent_list = my_sent.split(' ')
 print(my_sent_list)
