@@ -19,5 +19,9 @@ start_dict = {'noah': '2/23/1999',
 #turn it into {'Noah': datetime(1999, 2, 23),
 #              'Sarah':datetime(2001, 9, 1),
 #              'Zach': datetime(2005, 8, 8)}
-capitalize_dict = {name:date for name, date in start_dict.items()}
-capitalize_dict = {name.capwords():date for name, date in start_dict}
+
+date_format = '%m/%d/%Y'
+answer = {k.capitalize():datetime.datetime.strptime(v, date_format) for k, v in
+start_dict.items()}
+print()
+
