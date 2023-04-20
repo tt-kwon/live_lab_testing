@@ -6,3 +6,6 @@ choices = ['rock', 'paper', 'scissors']
 
 p1 = random.choice(choices)
 p2 = random.choice(choices)
+
+#write a loop that goes through all potential combos the two players could make
+# 
