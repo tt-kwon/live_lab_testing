@@ -23,3 +23,4 @@ df1 = pd.DataFrame(data1)
 df2 = pd.DataFrame(data2)
 df3 = pd.DataFrame(data3)
 
+df1.merge(df3, on = 'date', how = 'right')
